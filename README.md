@@ -1,3 +1,6 @@
+Open Up terminal in project and install npm packages
+npm run dev to load localhost
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
