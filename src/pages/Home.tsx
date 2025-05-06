@@ -35,16 +35,16 @@ const Home = () => {
 
   const handlePaginationChange = (
     event: React.ChangeEvent<unknown>,
-    value: number
+    pageNum: number
   ) => {
-    setCurrentPage(value);
+    setCurrentPage(pageNum);
     setSize(6);
   };
 
   useEffect(() => {
     const loadMovies = async () => {
       try {
-        const allMovies = await GetMovies(currentPage, size, searchQuery);
+        const allMovies = await GetMovies(currentPage, 6, searchQuery);
         console.log("Movies : " + allMovies);
         setMovies(allMovies);
       } catch (err) {
@@ -61,7 +61,7 @@ const Home = () => {
   useEffect(() => {
     const loadMovies = async () => {
       try {
-        const allMovies = await GetMovies(currentPage, size, searchQuery);
+        const allMovies = await GetMovies(1, 6, searchQuery);
         console.log("Movies : " + allMovies);
         setMovies(allMovies);
       } catch (err) {
