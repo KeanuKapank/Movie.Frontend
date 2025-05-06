@@ -1,5 +1,5 @@
-Open Up terminal in project and install npm packages
-npm run dev to load localhost
+# Open Up terminal in project and install npm packages
+# npm run dev to load localhost
 
 # React + TypeScript + Vite
 
