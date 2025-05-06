@@ -1,0 +1,110 @@
+.homeForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 100px;
+
+}
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.genreSelect{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+/* Form Container */
+.movie-form {
+    width: 100%;
+    max-width: 75%;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #3f3f3f;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    color: #333;
+   
+}
+
+/* Title Styling */
+.movie-form h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Labels */
+.movie-form label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+}
+
+/* Input and Textarea Fields */
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border 0.3s ease;
+    height: fit-content;
+}
+
+.input-field:focus {
+    outline: none;
+    border-color: #007BFF;
+}
+
+/* Checkbox Styling */
+.input-checkbox {
+    margin: 10px 0 1rem 0;
+}
+
+/* Submit Button */
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #b1daf1;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Styling */
+@media (max-width: 600px) {
+    .movie-form {
+        padding: 1.5rem;
+    }
+
+    .movie-form h2 {
+        font-size: 1.5rem;
+    }
+
+    .input-field {
+        padding: 8px;
+    }
+
+    .submit-btn {
+        padding: 10px;
+    }
+}
